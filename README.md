@@ -1,5 +1,5 @@
 # Brightwork Addon Template
-This is the basic template for developing a Brightwork addon for Marble.
+This is the basic template for developing a Brightwork addon for [Marble](https://github.com/NetworkNeighborhood/Marble).
 Update this if needed!
 
 ## Installation instructions
