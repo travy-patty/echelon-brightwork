@@ -1,8 +1,8 @@
 {
-  "name": "My Brightwork Addon",
+  "name": "Echelon",
   "version": "1.0.0",
-  "author": "",
-  "description": "",
-  "homepage": "",
+  "author": "travy-patty",
+  "description": "A Firefox 4-14(for now) theme for Marble",
+  "homepage": "https://github.com/travy-patty/echelon-brightwork",
   "icon": "icon.png"
 }

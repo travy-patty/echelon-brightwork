@@ -8,6 +8,10 @@ navbar-tooltip-instruction =
        *[other] Right-click or pull down to show history
     }
 
+## Back & Forward
+back-forward-item =
+    .title = Back/Forward
+
 ## Back
 
 # Variables

@@ -6,7 +6,6 @@
   <script src="chrome://browser/content/navigator-toolbox.js" />
 
   <!-- Menu -->
-  <vbox id="titlebar">
   <toolbar type="menubar" id="toolbar-menubar"
            class="browser-toolbar chromeclass-menubar browser-titlebar titlebar-color"
            customizable="true"
@@ -96,7 +95,6 @@
 #include titlebar-items.inc.xhtml
 
   </toolbar>
-  </vbox>
 
   <toolbar id="nav-bar"
            class="browser-toolbar chromeclass-location"
@@ -115,20 +113,24 @@
     <toolbartabstop/>
 
     <hbox id="nav-bar-customization-target" flex="1">
-      <toolbarbutton id="back-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
-                     data-l10n-id="toolbar-button-back-2"
-                     removable="false" overflows="false"
-                     keepbroadcastattributeswhencustomizing="true"
-                     command="Browser:BackOrBackDuplicate"
-                     tooltip="back-button-tooltip"
-                     context="backForwardMenu"/>
-      <toolbarbutton id="forward-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
-                     data-l10n-id="toolbar-button-forward-2"
-                     removable="false" overflows="false"
-                     keepbroadcastattributeswhencustomizing="true"
-                     command="Browser:ForwardOrForwardDuplicate"
-                     tooltip="forward-button-tooltip"
-                     context="backForwardMenu"/>
+      <toolbaritem id="unified-back-forward-button" class="chromeclass-toolbar-additional"
+                   context="backForwardMenu" removable="true"
+                   data-l10n-id="back-forward-item">
+        <toolbarbutton id="back-button" class="toolbarbutton-1"
+                      data-l10n-id="toolbar-button-back-2"
+                      removable="false" overflows="false"
+                      keepbroadcastattributeswhencustomizing="true"
+                      command="Browser:BackOrBackDuplicate"
+                      tooltip="back-button-tooltip"
+                      context="backForwardMenu"/>
+        <toolbarbutton id="forward-button" class="toolbarbutton-1"
+                      data-l10n-id="toolbar-button-forward-2"
+                      removable="false" overflows="false"
+                      keepbroadcastattributeswhencustomizing="true"
+                      command="Browser:ForwardOrForwardDuplicate"
+                      tooltip="forward-button-tooltip"
+                      context="backForwardMenu"/>
+      </toolbaritem>
       <toolbaritem id="stop-reload-button" class="chromeclass-toolbar-additional"
                    data-l10n-id="toolbar-button-stop-reload"
                    removable="true" overflows="false">
